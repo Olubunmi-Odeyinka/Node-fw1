@@ -1,0 +1,32 @@
+{
+  "name": "nodefw1",
+  "version": "1.0.0",
+  "description": "node crud sample",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "author": "olubunmi odeyinka",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.4.1",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.27",
+    "mongoose": "^4.9.8",
+    "morgan": "^1.8.2",
+    "validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.3.0",
+    "nodemon": "^1.11.0",
+    "rewire": "^2.5.2",
+    "supertest": "^3.0.0"
+  }
+}
